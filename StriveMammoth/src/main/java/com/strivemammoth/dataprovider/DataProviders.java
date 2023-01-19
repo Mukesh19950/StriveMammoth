@@ -29,7 +29,7 @@ public class DataProviders {
 	    	
 	    	for (int i=0; i < actRows; i++)
 	    	{
-	    		Map<String , String> hashmap = new HashMap<>();
+	    		Map<String , String> hashmap = new HashMap<String, String>();
 	    		for (int j=0; j < column; j++)
 	    		{
 	    			hashmap.put(obj.getCellData("Clients_Data", j, 1), obj.getCellData("Clients_Data", j, i + 2));

@@ -14,7 +14,7 @@ public class WashPage extends BaseClass {
 	@FindBy(xpath = "//button[contains(text(),'Add New Wash')]")
 	private WebElement AddNewWash;
 	
-	@FindBy(xpath="//a[text()='Washes']1")
+	@FindBy(xpath="//a[text()='Washes']")
 	private WebElement washes;
 	
 	

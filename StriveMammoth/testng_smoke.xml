@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-   <parameter name = "browser"  value="Chrome"></parameter>
-  <groups>
-     <run>
-  
-        <include name = "Smoke"></include>
-  
-     </run>
-  
-   </groups>
-    <classes>
-      <class name="com.strivemammoth.testcases.WashPage_TestCases"/>
-      <class name="com.strivemammoth.testcases.LoginPage_Testcase"/>
-      <class name="com.strivemammoth.testcases.CashRegisterPage_TestCase"/>
-      <class name="com.strivemammoth.testcases.ClientPage_TestCase"/>
-    </classes>
-  </test> <!-- Test -->
+<listeners>
+		<listener
+			class-name="com.strivemammoth.utility.ListenersClass"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.strivemammoth.testcases.WashPage_TestCases" />
+			<class name="com.strivemammoth.testcases.LoginPage_Testcase" />
+			<class
+				name="com.strivemammoth.testcases.CashRegisterPage_TestCase" />
+			<class name="com.strivemammoth.testcases.ClientPage_TestCase" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
