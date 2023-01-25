@@ -36,6 +36,7 @@ public class LoginPage_Testcase extends BaseClass{
 
 		Log.info("Enter username and Password");
 		loginpage.Signin(prop.getProperty("username"), prop.getProperty("password"));
+		System.out.println("Hello");
 
 	}
 

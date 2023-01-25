@@ -2,45 +2,26 @@
 <testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-05T20:17:04 IST" name="Suite" finished-at="2023-01-05T20:18:25 IST" duration-ms="81719">
+  <suite started-at="2023-01-23T21:40:04 IST" name="Suite" finished-at="2023-01-23T21:41:36 IST" duration-ms="92318">
     <groups>
-      <group name="Sanity">
-        <method signature="LoginPage_Testcase.Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@4d02f94e]" name="Login" class="com.strivemammoth.testcases.LoginPage_Testcase"/>
-        <method signature="WashPage_TestCases.AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" name="AddWash" class="com.strivemammoth.testcases.WashPage_TestCases"/>
-      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="CashRegisterPage_TestCase.GoToCashRegClose()[pri:2, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" name="GoToCashRegClose" class="com.strivemammoth.testcases.CashRegisterPage_TestCase"/>
+        <method signature="CashRegisterPage_TestCase.GoToCashRegOpen()[pri:1, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" name="GoToCashRegOpen" class="com.strivemammoth.testcases.CashRegisterPage_TestCase"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-01-05T20:17:04 IST" name="Test" finished-at="2023-01-05T20:18:25 IST" duration-ms="81719">
+    <test started-at="2023-01-23T21:40:04 IST" name="Test" finished-at="2023-01-23T21:41:36 IST" duration-ms="92318">
       <class name="com.strivemammoth.testcases.WashPage_TestCases">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" started-at="2023-01-05T20:17:03 IST" name="loadConfig" finished-at="2023-01-05T20:17:04 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@6babf3bf]" started-at="2023-01-23T21:40:04 IST" name="loadConfig" finished-at="2023-01-23T21:40:04 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" started-at="2023-01-05T20:17:04 IST" name="setup" finished-at="2023-01-05T20:17:13 IST" duration-ms="9580" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" started-at="2023-01-05T20:17:13 IST" name="AddWash" finished-at="2023-01-05T20:17:55 IST" duration-ms="41566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddWash -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" started-at="2023-01-05T20:17:55 IST" name="close" finished-at="2023-01-05T20:17:55 IST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@ea6147e]" started-at="2023-01-05T20:18:25 IST" name="endextent" finished-at="2023-01-05T20:18:26 IST" duration-ms="697" status="PASS">
+        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@6babf3bf]" started-at="2023-01-23T21:41:36 IST" name="endextent" finished-at="2023-01-23T21:41:36 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endextent -->
       </class> <!-- com.strivemammoth.testcases.WashPage_TestCases -->
-      <class name="com.strivemammoth.testcases.LoginPage_Testcase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@4d02f94e]" started-at="2023-01-05T20:17:55 IST" name="setup" finished-at="2023-01-05T20:18:03 IST" duration-ms="8058" status="PASS">
+      <class name="com.strivemammoth.testcases.CashRegisterPage_TestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:40:04 IST" name="setup" finished-at="2023-01-23T21:40:19 IST" duration-ms="15383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +32,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@4d02f94e]" started-at="2023-01-05T20:18:03 IST" name="Login" finished-at="2023-01-05T20:18:25 IST" duration-ms="21965" status="PASS">
+        <test-method signature="GoToCashRegOpen()[pri:1, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:40:19 IST" name="GoToCashRegOpen" finished-at="2023-01-23T21:40:53 IST" duration-ms="33776" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@4d02f94e]" started-at="2023-01-05T20:18:25 IST" name="close" finished-at="2023-01-05T20:18:25 IST" duration-ms="220" status="PASS">
+        </test-method> <!-- GoToCashRegOpen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:40:53 IST" name="teardown" finished-at="2023-01-23T21:40:53 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.strivemammoth.testcases.LoginPage_Testcase -->
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:40:53 IST" name="setup" finished-at="2023-01-23T21:41:00 IST" duration-ms="6862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GoToCashRegClose()[pri:2, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:41:00 IST" name="GoToCashRegClose" finished-at="2023-01-23T21:41:36 IST" duration-ms="35583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToCashRegClose -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.strivemammoth.testcases.CashRegisterPage_TestCase@3059cbc]" started-at="2023-01-23T21:41:36 IST" name="teardown" finished-at="2023-01-23T21:41:36 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.strivemammoth.testcases.CashRegisterPage_TestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
