@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\mukes\git\StriveMammothProject\StriveMammoth\testng_smoke.xml</span>
+                    <span>C:\Users\mukes\git\StriveMammothProject\StriveMammoth\testng_sanity.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.strivemammoth.testcases.CashRegisterPage_TestCase" class="method navigator-link" hash-for-method="GoToCashRegClose">GoToCashRegClose</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.strivemammoth.testcases.CashRegisterPage_TestCase" class="method navigator-link" hash-for-method="GoToCashRegOpen">GoToCashRegOpen</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.strivemammoth.testcases.LoginPage_Testcase" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +122,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.strivemammoth.testcases.CashRegisterPage_TestCase</span>
+              <span class="class-name">com.strivemammoth.testcases.LoginPage_Testcase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GoToCashRegClose">
-                  </a> <!-- GoToCashRegClose -->
-                  <span class="method-name">GoToCashRegClose</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GoToCashRegOpen">
-                  </a> <!-- GoToCashRegOpen -->
-                  <span class="method-name">GoToCashRegOpen</span>
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +137,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mukes\git\StriveMammothProject\StriveMammoth\testng_smoke.xml</span>
+            <span class="header-content">C:\Users\mukes\git\StriveMammothProject\StriveMammoth\testng_sanity.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -163,7 +151,7 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Smoke&quot;/&gt;
+        &lt;include name=&quot;Sanity&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -195,14 +183,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Smoke</span>
+              <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">GoToCashRegClose</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">GoToCashRegOpen</span>
+                <span class="method-in-group-name">Login</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -222,20 +206,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GoToCashRegClose')
-data.setCell(0, 2, 'com.strivemammoth.testcases.CashRegisterPage_TestCase')
-data.setCell(0, 3, 35583);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GoToCashRegOpen')
-data.setCell(1, 2, 'com.strivemammoth.testcases.CashRegisterPage_TestCase')
-data.setCell(1, 3, 33776);
+data.setCell(0, 1, 'Login')
+data.setCell(0, 2, 'com.strivemammoth.testcases.LoginPage_Testcase')
+data.setCell(0, 3, 21817);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,14 +230,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.strivemammoth.testcases.LoginPage_Testcase</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Login</span>
-                <br/>
                 <span class="ignored-method-name">endextent</span>
                 <br/>
                 <span class="ignored-method-name">loadConfig</span>
@@ -269,7 +247,18 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">endextent</span>
                 <br/>
+                <span class="ignored-method-name">GoToCashRegClose</span>
+                <br/>
+                <span class="ignored-method-name">GoToCashRegOpen</span>
+                <br/>
                 <span class="ignored-method-name">loadConfig</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.strivemammoth.testcases.WashPage_TestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">AddWash</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -281,13 +270,6 @@ return data;
                 <span class="ignored-method-name">loadConfig</span>
                 <br/>
                 <span class="ignored-method-name">SignIntoLoc</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.strivemammoth.testcases.WashPage_TestCases</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">AddWash</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -306,37 +288,25 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.strivemammoth.testcases.CashRegisterPage_TestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.strivemammoth.testcases.LoginPage_Testcase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">226 ms</span>
+                <span class="method-start">233 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">GoToCashRegOpen</span>
-                <span class="method-start">15609 ms</span>
+                <span class="method-name">Login</span>
+                <span class="method-start">9193 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">49420 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">49815 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">GoToCashRegClose</span>
-                <span class="method-start">56677 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">92266 ms</span>
+                <span class="method-name">close</span>
+                <span class="method-start">31037 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.strivemammoth.testcases.WashPage_TestCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endextent</span>
-                <span class="method-start">92549 ms</span>
+                <span class="method-start">31334 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
