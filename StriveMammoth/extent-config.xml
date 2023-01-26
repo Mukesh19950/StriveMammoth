@@ -19,7 +19,7 @@
 		<!-- report name - displayed at top-nav -->
 		<reportName>StriveMammoth
          <![CDATA[
-                <img src='F:\StriveMammoth\StriveMammoth\Logo\download.png'/>
+                <img src='http://localhost:8080/job/StriveMammoth/ws/StriveMammoth/Logo/download.png'/>
             ]]>
 		</reportName>
 
