@@ -16,7 +16,7 @@ public class ExtentManager {
 
 	public static void setExtent() {
 	
-		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport/MyReport.html");
+		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport/"+"MyReport.html");
 		
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir") + "/extent-config.xml");
 		extent = new ExtentReports();
