@@ -22,7 +22,7 @@ public class WashPage_TestCases extends BaseClass {
 		
 	}
 	
-	@Test (groups = "Smoke")
+	@Test (groups = "Sanity")
 	public void AddWash() throws Exception 
 	{
 
