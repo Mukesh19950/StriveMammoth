@@ -31,7 +31,7 @@
 
 		<!-- custom javascript -->
 		<scripts>
-            <![CDATA[
+            <![CDATA[ 
                 $(document).ready(function() {
                     
                 });
