@@ -48,6 +48,8 @@ public class LoginPage extends BaseClass {
 		action.click(getDriver(), proceed);
 		Thread.sleep(10000);
 		
+		
+		
 	}
 	
 	
