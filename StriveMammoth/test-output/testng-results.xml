@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-02T12:25:55 IST" name="Suite" finished-at="2023-02-02T12:26:03 IST" duration-ms="8004">
+  <suite started-at="2023-03-01T17:35:23 IST" name="Suite" finished-at="2023-03-01T17:37:18 IST" duration-ms="115236">
     <groups>
+      <group name="Sanity">
+        <method signature="LoginPage_Testcase.Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" name="Login" class="com.strivemammoth.testcases.LoginPage_Testcase"/>
+        <method signature="WashPage_TestCases.AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" name="AddWash" class="com.strivemammoth.testcases.WashPage_TestCases"/>
+      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2023-02-02T12:25:55 IST" name="Test" finished-at="2023-02-02T12:26:03 IST" duration-ms="8004">
-      <class name="com.strivemammoth.testcases.ClientSearch_TestCase">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.ClientSearch_TestCase@6bedbc4d]" started-at="2023-02-02T12:25:54 IST" name="loadConfig" finished-at="2023-02-02T12:25:55 IST" duration-ms="235" status="PASS">
+    <test started-at="2023-03-01T17:35:23 IST" name="Test" finished-at="2023-03-01T17:37:18 IST" duration-ms="115236">
+      <class name="com.strivemammoth.testcases.WashPage_TestCases">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:23 IST" name="loadConfig" finished-at="2023-03-01T17:35:23 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.ClientSearch_TestCase@6bedbc4d]" started-at="2023-02-02T12:25:55 IST" name="setup" finished-at="2023-02-02T12:26:03 IST" duration-ms="7955" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:23 IST" name="setup" finished-at="2023-03-01T17:35:47 IST" duration-ms="24269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,19 +26,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clientsearch()[pri:0, instance:com.strivemammoth.testcases.ClientSearch_TestCase@6bedbc4d]" started-at="2023-02-02T12:26:03 IST" name="clientsearch" finished-at="2023-02-02T12:26:03 IST" duration-ms="12" status="PASS">
+        <test-method signature="AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:47 IST" name="AddWash" finished-at="2023-03-01T17:36:29 IST" duration-ms="41450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientsearch -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.ClientSearch_TestCase@6bedbc4d]" started-at="2023-02-02T12:26:03 IST" name="close" finished-at="2023-02-02T12:26:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- AddWash -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:36:29 IST" name="close" finished-at="2023-03-01T17:36:29 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.ClientSearch_TestCase@6bedbc4d]" started-at="2023-02-02T12:26:03 IST" name="endextent" finished-at="2023-02-02T12:26:03 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:37:18 IST" name="endextent" finished-at="2023-03-01T17:37:19 IST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endextent -->
-      </class> <!-- com.strivemammoth.testcases.ClientSearch_TestCase -->
+      </class> <!-- com.strivemammoth.testcases.WashPage_TestCases -->
+      <class name="com.strivemammoth.testcases.LoginPage_Testcase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:36:29 IST" name="setup" finished-at="2023-03-01T17:36:56 IST" duration-ms="27276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:36:56 IST" name="Login" finished-at="2023-03-01T17:37:18 IST" duration-ms="21695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:37:18 IST" name="close" finished-at="2023-03-01T17:37:18 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.strivemammoth.testcases.LoginPage_Testcase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

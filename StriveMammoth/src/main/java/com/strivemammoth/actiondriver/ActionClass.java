@@ -272,7 +272,7 @@ public class ActionClass extends BaseClass {
 	public boolean switchToFrameByIndex(WebDriver driver,int index) {
 		boolean flag = false;
 		try {
-			new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
+			new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
 			driver.switchTo().frame(index);
 			flag = true;
 			return true;
@@ -699,7 +699,7 @@ public class ActionClass extends BaseClass {
 	
 	
 	public void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	

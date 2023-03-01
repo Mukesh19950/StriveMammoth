@@ -15,8 +15,7 @@
 		<classes>
 			<class name="com.strivemammoth.testcases.WashPage_TestCases" />
 			<class name="com.strivemammoth.testcases.LoginPage_Testcase" />
-			<class
-				name="com.strivemammoth.testcases.CashRegisterPage_TestCase" />
+			<class name="com.strivemammoth.testcases.CashRegisterPage_TestCase" />
 			<class name="com.strivemammoth.testcases.ClientPage_TestCase" />
 		</classes>
 	</test> <!-- Test -->
