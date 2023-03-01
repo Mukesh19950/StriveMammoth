@@ -107,8 +107,8 @@ public class BaseClass {
 		//Launching the URL
 		getDriver().get(prop.getProperty("url"));
 	}
-	
-	
+
+
 
 	@AfterSuite (groups = {"Smoke","Sanity","Regression"})
 	public void endextent() {
