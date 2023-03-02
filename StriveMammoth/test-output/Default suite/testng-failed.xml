@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.strivemammoth.testcases.ClientSearch_TestCase">
+      <class name="com.strivemammoth.testcases.LoginPage_Testcase">
         <methods>
+          <include name="Login"/>
           <include name="endextent"/>
-          <include name="loadConfig"/>
           <include name="setup"/>
-          <include name="clientsearch"/>
           <include name="close"/>
+          <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.strivemammoth.testcases.ClientSearch_TestCase -->
+      </class> <!-- com.strivemammoth.testcases.LoginPage_Testcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,65 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T17:35:23 IST" name="Suite" finished-at="2023-03-01T17:37:18 IST" duration-ms="115236">
+  <suite started-at="2023-03-02T10:20:31 IST" name="Default suite" finished-at="2023-03-02T10:20:31 IST" duration-ms="52">
     <groups>
       <group name="Sanity">
-        <method signature="LoginPage_Testcase.Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" name="Login" class="com.strivemammoth.testcases.LoginPage_Testcase"/>
-        <method signature="WashPage_TestCases.AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" name="AddWash" class="com.strivemammoth.testcases.WashPage_TestCases"/>
+        <method signature="LoginPage_Testcase.Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" name="Login" class="com.strivemammoth.testcases.LoginPage_Testcase"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2023-03-01T17:35:23 IST" name="Test" finished-at="2023-03-01T17:37:18 IST" duration-ms="115236">
-      <class name="com.strivemammoth.testcases.WashPage_TestCases">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:23 IST" name="loadConfig" finished-at="2023-03-01T17:35:23 IST" duration-ms="341" status="PASS">
+    <test started-at="2023-03-02T10:20:31 IST" name="Default test" finished-at="2023-03-02T10:20:31 IST" duration-ms="52">
+      <class name="com.strivemammoth.testcases.LoginPage_Testcase">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" started-at="2023-03-02T10:20:31 IST" name="loadConfig" finished-at="2023-03-02T10:20:31 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:23 IST" name="setup" finished-at="2023-03-01T17:35:47 IST" duration-ms="24269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" started-at="2023-03-02T10:20:31 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1677732631942" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\mukes\AppData\Local\Temp\testng-eclipse-570407718\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\mukes\AppData\Local\Temp\testng-eclipse-570407718\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddWash()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:35:47 IST" name="AddWash" finished-at="2023-03-01T17:36:29 IST" duration-ms="41450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddWash -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:36:29 IST" name="close" finished-at="2023-03-01T17:36:29 IST" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.WashPage_TestCases@37d4349f]" started-at="2023-03-01T17:37:18 IST" name="endextent" finished-at="2023-03-01T17:37:19 IST" duration-ms="424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endextent -->
-      </class> <!-- com.strivemammoth.testcases.WashPage_TestCases -->
-      <class name="com.strivemammoth.testcases.LoginPage_Testcase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:36:29 IST" name="setup" finished-at="2023-03-01T17:36:56 IST" duration-ms="27276" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:36:56 IST" name="Login" finished-at="2023-03-01T17:37:18 IST" duration-ms="21695" status="PASS">
+        <test-method signature="Login()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" started-at="2023-03-02T10:20:31 IST" name="Login" finished-at="2023-03-02T10:20:31 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\mukes\AppData\Local\Temp\testng-eclipse-570407718\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\mukes\AppData\Local\Temp\testng-eclipse-570407718\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@434a63ab]" started-at="2023-03-01T17:37:18 IST" name="close" finished-at="2023-03-01T17:37:18 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" started-at="2023-03-02T10:20:31 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1677732631962" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
+        <test-method is-config="true" signature="endextent()[pri:0, instance:com.strivemammoth.testcases.LoginPage_Testcase@618425b5]" started-at="2023-03-02T10:20:32 IST" name="endextent" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1677732632013" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endextent -->
       </class> <!-- com.strivemammoth.testcases.LoginPage_Testcase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
